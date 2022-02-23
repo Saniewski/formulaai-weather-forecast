@@ -30,7 +30,7 @@ Testing data should be compliant with the specification provided [here](https://
 
 
 ## Usage
-a) Run cells in `train_valid_model.ipynb` IPy Notebook to train, validate, and view performance of the model.
+a) Run cells in `train_valid_model.ipynb` IPy Notebook to train, validate, and view performance of the model.<br>
 b) Run cells in `test_model.ipynb` IPy Notebook to test the trained model on the given test set.
 
 
