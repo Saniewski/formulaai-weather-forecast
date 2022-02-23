@@ -130,7 +130,6 @@ def preprocess(path='weather_processed.csv', data=None, train_model=False):
             series.append(sess)
         train, valid = train_test_split(series, test_size = 0.2, random_state=1)
         train, valid = pd.concat(train), pd.concat(valid)
-        df = train
 
         # fit new scaler
         scaler = StandardScaler()
@@ -205,8 +204,8 @@ def preprocess(path='weather_processed.csv', data=None, train_model=False):
         ]
 
     if train_model:
-        x_train, y_train = scaled_train[x_columns], scaled_train[y_columns]
-    x_valid, y_valid = scaled_valid[x_columns], scaled_valid[y_columns]
+        x_train, y_train = scaled_train[x_columns], train[y_columns]
+    x_valid, y_valid = scaled_valid[x_columns], df[y_columns]
 
     n_input = 50
     n_features = len(x_columns)
@@ -216,6 +215,6 @@ def preprocess(path='weather_processed.csv', data=None, train_model=False):
     valid_ts = tf.keras.preprocessing.sequence.TimeseriesGenerator(x_valid.to_numpy(), y_valid.to_numpy(), length = n_input, batch_size=10000)
 
     if train_model:
-        return train_ts, valid_ts, n_input, n_features
+        return train_ts, valid_ts, y_valid, n_input, n_features
 
-    return valid_ts, n_input, n_features
+    return valid_ts, y_valid, n_input, n_features
