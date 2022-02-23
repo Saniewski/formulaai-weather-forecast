@@ -36,10 +36,10 @@ b) Run cells in `test_model.ipynb` IPy Notebook to test the trained model on the
 
 
 ## Credits
-Adam Miśkiewicz
-Igor Nowacki
-Katarzyna Gastołek
-Jan Solarz
-Damian Polak
-Stanisław Raczkiewicz
+Adam Miśkiewicz<br>
+Igor Nowacki<br>
+Katarzyna Gastołek<br>
+Jan Solarz<br>
+Damian Polak<br>
+Stanisław Raczkiewicz<br>
 Paweł Saniewski
