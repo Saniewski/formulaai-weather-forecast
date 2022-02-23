@@ -4,9 +4,9 @@ A take on the problem of weather forecasting in F1 2021 game developed by team S
 
 
 ## Table of Contents
-1. Requirements
-2. Usage
-3. Credits
+1. [Requirements](https://github.com/Saniewski/formulaai-weather-forecast#requirements)
+2. [Usage](https://github.com/Saniewski/formulaai-weather-forecast#usage)
+3. [Credits](https://github.com/Saniewski/formulaai-weather-forecast#credits)
 
 
 
